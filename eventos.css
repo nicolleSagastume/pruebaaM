@@ -1,0 +1,464 @@
+/* Importa la fuente Stagera desde un servidor externo */
+@import url(https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera);
+
+/* Estilos generales para todos los elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos base del cuerpo del documento */
+body{
+    height: 100vh;
+    width:100%;
+    font-family: sans-serif;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+/* Estilo del encabezado */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+}
+.logo img{
+    height: 150px;
+}
+.container-nav{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+.nav-amarillo {
+    background-color:  #F4BC4A;
+    color:black;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+
+.nav-cafe{
+    background-color:  #683C11;
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+
+.navbar-amarillo a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+
+  
+  
+    
+}
+
+.navbar-cafe a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+    
+    
+}
+/* Contenedor del slider de imágenes*/
+.slider-box {
+    width: 95% !important;
+    height: auto;
+    margin: 0px auto 0;
+    overflow: hidden;
+}
+/* Lista de imágenes en fila para el slider */
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+.titleC {
+    text-decoration: none;
+    color:#fedc97;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+/* Estilos para la clase restaurante (contenedor de imágenes) */
+.restaurante{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+}
+/* Estilos para las imágenes dentro del contenedor restaurante */
+.restaurante img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* recorta y ajusta sin deformar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+/* Efecto al pasar el mouse sobre las imágenes del restaurante */
+.restaurante img:hover {
+      transform: scale(1.05); /* pequeño efecto al pasar el mouse */
+    }
+    /* Contenedor principal */
+.container{
+    max-width: 1050px;
+    width: 100%;
+    background: #8A6835;
+    border-radius: 12px;
+    margin: 30px 20px 30px 365px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 195px;
+}
+/*Contenido interno del contenedor*/
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*contenedor imagen*/
+.content .image-box{
+    max-width: 65%;
+}
+.content .image-box img{
+    max-width: 100%;
+    
+    
+}
+/*para el topic del formulario*/
+.content .topic{
+    font-size: 30px;
+    font-weight: "strong";
+    color: #432918;
+    font-family: 'Poppins';
+}
+.content form{
+    width: 40%;
+    margin-right: 30px;
+}
+/*configuracion para las entradas de los datos*/
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.content .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding: 16px;
+    background: #C5A667;
+    border: 2px solid transparent;
+    transition: all 0.3 ease;
+}
+.content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #FFFFFF;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+/*Efectos cuando el input tiene texto o se selecciona */
+.content .input-box input:focus,
+.content .input-box input:valid{
+    border-color: #432918;
+    background: #fff;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: #432918;
+    background: #fff;
+}
+/*caja de texto*/
+.content .message-box{
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #C5A667;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+}
+.content .message-box textarea:focus{
+    border-color: #432918;
+    background-color: #fff;
+}
+.content .message-box label{
+    position: absolute;
+    font-size: 16px;
+    color: #FFFFFF;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+    left: 12px;
+    top: -10px;
+    color: #432918;
+    font-size: 14px;
+    background-color: #fff;
+
+}
+/*boton para enviar*/
+.content .input-box input[type="submit"]{
+    color: #ffff;
+    background: #432918;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight:  500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+/*configuracion para el formulario y q se adapte al tamaño de la pantalla*/
+.content .input-box input[type="submit"]:hover{
+    background-color:#C5A667;
+}
+@media (max-width:1000px) {
+    .content .image-box{
+        max-width: 70%;
+    }
+    .content{
+        padding: 10px 0;
+    }
+}
+@media (max-width:900px) {
+    .content .image-box{
+        display: none;
+    }
+    .content form{
+        width: 100%;
+        margin-left: 30px;
+
+    }
+}
+/*footer*/
+
+ footer {
+      background-color: #3d2415;
+      padding: 20px 40px;
+      color: white;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+/* Logo de Marielita */
+    .footer-logo img {
+      height: 80px;
+    }
+/* Información de texto del footer */
+    .footer-info {
+      text-align: right;
+    }
+/* Márgenes de los textos en el footer */
+    .footer-info p {
+      margin: 4px 0;
+    }
+/* Contenedor de íconos sociales */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+/* Estilo y animación de íconos sociales */
+    .social-icons i {
+      margin-left: 12px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.2);
+      color: #f3cba5;
+    }
+
+/* Ajustes para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-info {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .social-icons i {
+        margin: 0 8px;
+      }
+    }
+
+
+    
+/* --- Responsive para móviles --- */
+@media (max-width: 768px) {
+  /* Encabezado en columna */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  /* Logo más pequeño */
+  .logo img {
+    height: 100px;
+  }
+
+  /* Ocultar navegación en móviles */
+  .container-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #432918;
+  }
+
+  .container-nav a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  /* Menú hamburguesa */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #432918;
+    background: none;
+    border: none;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  /* Mostrar el menú cuando esté activo */
+  .container-nav.active {
+    display: flex;
+  }
+
+  /* Ajustes de la sección */
+  .section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .block img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 1.6rem;
+  }
+
+  /* Footer centrado */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielita</title>
+    <link rel="stylesheet" href="galeria.css">
+    <link href="https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo de la compañia" height="150px"
+                class="logo-img"><!-- Se configura el logo que sale en la ezquina superior izquierda-->
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="container-nav">
+            <a href="index.html" class="nav-amarillo">Inicio</a>
+            <a href="menu.html" class="nav-cafe">Menú</a>
+            <a href="eventos.html" class="nav-amarillo">Eventos</a>
+            <a href="adomicilio.html" class="nav-cafe">Adomicilio</a>
+            <a href="galeria.html" class="nav-amarillo">Productos</a>
+        </nav>
+    </header>
+    <div class="slider-box">
+
+        <ul>
+            <li><img class="restaurante" src="teT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="jaleasT.png" alt=" restaurante Marielita"></li>
+            <li><img class="restaurante" src="toppingT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="cafeT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="cupcakesT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="jugoT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="aderezosT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="galletasT.png" alt="restaurante Marielita"></li>
+            <li><img class="restaurante" src="kpopsT.png" alt="restaurante Marielita"></li>
+        </ul>
+
+    </div><!--termina el clase para el carrrusel-->
+    <!--Contenedor de las imagenes-->
+    <div class="container">
+        <div class="image-container"><!--Contenedor solo de las imagenes-->
+            <div class="image"><img src="cafe.jpg"></div>
+            <div class="image"><img src="jugonaranja.jpg"></div>
+            <div class="image"><img src="te.jpg"></div>
+            <div class="image"><img src="galletas.jpg"></div>
+            <div class="image"><img src="kpops.jpg"></div>
+            <div class="image"><img src="cupcakes.jpg"></div>
+            <div class="image"><img src="aderezos.jpg"></div>
+            <div class="image"><img src="jaleas.jpg"></div>
+            <div class="image"><img src="topping.jpg"></div>
+        </div>
+
+        <div class="popup-image"><!--Contenedor de las imagenes cuando se agrandan -->
+            <span>&times;</span>
+            <img src="cafe.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        // Selecciona todas las imágenes dentro de un contenedor con la clase 'image-container'
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {// Cuando el usuario hace clic en una imagen
+                document.querySelector('.popup-image').style.display = 'block';// Muestra el contenedor emergente (popup)
+                document.querySelector('.popup-image img').src = image.getAttribute('src');// Cambia la imagen del popup por la misma que el usuario seleccionó
+            }
+
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {// Cuando se hace clic en el botón/cierre (span) del popup...
+            document.querySelector('.popup-image').style.display = 'none';// Oculta el contenedor emergente (popup)
+        } 
+    </script>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo en el footer -->
+            <div class="footer-logo">
+                <img src="footer2.png" alt="Logo Marielita">
+            </div>
+            <!-- Información del pie de página -->
+            <div class="footer-info">
+                <p>Marielita © 2025</p>
+                <p>by Nicolle Sagastume C5A</p>
+                <!-- Iconos de redes sociales y contacto -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/1234567890" target="_blank" class="icon whatsapp"></a><i
+                        class="fab fa-facebook-f"></i>
+                    <a href="https://goo.gl/maps/tuUbicacion" target="_blank" class="icon ubicacion"
+                        aria-label="Ubicación"></a><i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i><!-- Ícono de teléfono (no funciona) -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

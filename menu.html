@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielita</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera" rel="stylesheet">
+    <!--Importa el tipo de letra Stagera-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--importa el tipo de letra que POPPINS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Link para pder utilizar los iconos que utilice en las tarjetas de menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo de la compañia" height="150px"
+                class="logo-img"><!-- Se configura el logo que sale en la ezquina superior izquierda-->
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="container-nav">
+            <!-- Enlaces de menu de navegacion-->
+            <a href="index.html" class="nav-amarillo">Inicio</a>
+            <a href="menu.html" class="nav-cafe">Menú</a>
+            <a href="eventos.html" class="nav-amarillo">Eventos</a>
+            <a href="adomicilio.html" class="nav-cafe">Adomicilio</a>
+            <a href="galeria.html" class="nav-amarillo">Productos</a>
+        </nav>
+    </header>
+    <!--EL div que encierra el carrusel-->
+    <div class="slider-box">
+
+        <ul>
+            <!--Imagenes del carrusel-->
+            <li><img class="restaurante"
+                    src="https://thumbs.dreamstime.com/b/cocinero-experimentado-felicitado-por-cuatro-personas-en-un-restaurante-de-moda-114642027.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/foto-gratis/camarero-feliz-sirviendo-comida-grupo-amigos-alegres-pub_637285-12525.jpg?semt=ais_hybrid&w=740"
+                    alt=" restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/fc/5b/38/white-oaks-saloon.jpg?w=600&h=-1&s=1"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/99/b9/b7/the-tan-yard.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c9/39/6a/1.jpg?w=600&h=-1&s=1"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://cosasbucket.s3.amazonaws.com/wp-content/uploads/2021/12/29164546/176724921_220054319917814_2535054978097275461_n1111.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://eldiariony.com/wp-content/uploads/sites/2/2023/09/Restaurante-shutterstock_1201677925.jpg?w=4096"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/fotos-premium/camarero-feliz-sirviendo-comida-mirando-camara-taberna_637285-2433.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/fotos-premium/barista-bonito-fazer-uma-xicara-de-cafe_13339-284411.jpg"
+                    alt="restaurante Marielita"></li>
+        </ul>
+
+    </div><!--cierre del div del slider box-->
+
+
+    <div class="todo"><!-- div que coloque para poder poner estilo a todas las tarjetas-->
+        <h1>Menú</h1>
+
+        <h3> Desayunos </h3>
+
+        <div class="container-cards"><!--contenedor de tarjetas de menu-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(comida1.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Chilaquiles de Birria</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Chilaquiles de Birria</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 Kg de carne de res</li>
+                            <li>3 tipos de chiles</li>
+                            <li>3 Jitomate</li>
+                            <li>½ cebolla</li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+            <!-- comida 2-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(comida2.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Desayuno tradicional</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Desayuno tradicional</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>20 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>2 huevos (estrellados, revueltos) </li>
+                            <li>1 porción de platanos</li>
+                            <li>1 porción de frijol</li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+
+            <!--COMIDA 3-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(comida3.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Crepas rellenas</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Crepas rellenas</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>25 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>½ libra de masa para crepas</li>
+                            <li>Toppings (Nutella, manjar, fresa)</li>
+                            <li>3 tipos de frutas</li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+
+            <!--COMIDA 4-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(comida4.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Avena con fruta</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Avena con fruta</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>30 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>Avena</li>
+                            <li>Fruta picada</li>
+                            <li>½ taza de leche</li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+        </div><!--cierre div contenedor -->
+        <!--ALMUERZOOOOOOOOOOOOOOOOOOOOS-->
+
+        <hr>
+        <h3> Almuerzos </h3>
+
+        <div class="container-cards"><!--Contenor de tarjetas-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(almuerzo1.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Asado familiar</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Asado familiar</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>60 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>1 Kg carne de res o costilla</li>
+                            <li>Guarniciones (Ensalada, papas, frijoles, pure) </li>
+                            <li>3 volcanos (postre dulce de leche) </li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+            <!-- ALMUERZO 2-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(almuerzo2.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Pasta Alfredo</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Pasta Alfredo</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>400 g de espagueti</li>
+                            <li>1 taza de nata para cocinar</li>
+                            <li>1 taza de parmesano rallado</li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+
+            <!--ALMUERZO 3-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(almuerzo3.1.png)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Derretido Steak</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Derretido Steak</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>Ques ( chedar, mozarella, suizo) </li>
+                            <li>250 g de filete de res</li>
+                            <li>12 rebanadas de pan baguette </li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+
+            <!--ALMUERZO 4-->
+            <div class="card">
+                <div class="card_landing" style="--i:url(almuerzo4.jpg)">
+                    <!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                    <h4>Hamburgesa doble</h4>
+                </div>
+                <div class="card_info">
+                    <div class="head">
+                        <p class="title">Hamburguesa doble</p>
+                        <div class="description">
+                            <div class="item">
+                                <i class="fa-regular fa-clock"></i><!--iconos que mencione arriba-->
+                                <p>40 min</p>
+                            </div>
+                            <div class="item">
+                                <i class="fa-regular fa-user"></i><!--iconos que mencione arriba-->
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p class="title">Ingredientes:</p>
+                        <ul class="list">
+                            <li>Pan de hamburguesa </li>
+                            <li>2 rodajas de carne de res</li>
+                            <li>cebolla caramelizada</li>
+                            <li>Tocino</li>
+                            <li>Queso chedar </li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <a href="#" class="btn">Ver receta</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                    </div>
+                </div>
+            </div>
+        </div><!--cierre de div contenedor de tarjetas-->
+    </div><!--cierre div todo-->
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo en el footer -->
+            <div class="footer-logo">
+                <img src="footer2.png" alt="Logo Marielita">
+            </div>
+            <!-- Información del pie de página -->
+            <div class="footer-info">
+                <p>Marielita © 2025</p>
+                <p>by Nicolle Sagastume C5A</p>
+                <!-- Iconos de redes sociales y contacto -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/1234567890" target="_blank" class="icon whatsapp"></a><i
+                        class="fab fa-facebook-f"></i>
+                    <a href="https://goo.gl/maps/tuUbicacion" target="_blank" class="icon ubicacion"
+                        aria-label="Ubicación"></a><i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i><!-- Ícono de teléfono (no funciona) -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

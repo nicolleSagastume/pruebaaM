@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielita</title>
+    <link rel="stylesheet" href="eventos.css">
+    <link href="https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo de la compañia" height="150px"
+                class="logo-img"><!-- Se configura el logo que sale en la ezquina superior izquierda-->
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="container-nav">
+            <a href="index.html" class="nav-amarillo">Inicio</a>
+            <a href="menu.html" class="nav-cafe">Menú</a>
+            <a href="eventos.html" class="nav-amarillo">Eventos</a>
+            <a href="adomicilio.html" class="nav-cafe">Adomicilio</a>
+            <a href="galeria.html" class="nav-amarillo">Productos</a>
+        </nav>
+    </header>
+    <div class="slider-box">
+        <ul>
+            <li><img class="restaurante"
+                    src="https://thumbs.dreamstime.com/b/cocinero-experimentado-felicitado-por-cuatro-personas-en-un-restaurante-de-moda-114642027.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/foto-gratis/camarero-feliz-sirviendo-comida-grupo-amigos-alegres-pub_637285-12525.jpg?semt=ais_hybrid&w=740"
+                    alt=" restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/fc/5b/38/white-oaks-saloon.jpg?w=600&h=-1&s=1"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/99/b9/b7/the-tan-yard.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c9/39/6a/1.jpg?w=600&h=-1&s=1"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://cosasbucket.s3.amazonaws.com/wp-content/uploads/2021/12/29164546/176724921_220054319917814_2535054978097275461_n1111.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://eldiariony.com/wp-content/uploads/sites/2/2023/09/Restaurante-shutterstock_1201677925.jpg?w=4096"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/fotos-premium/camarero-feliz-sirviendo-comida-mirando-camara-taberna_637285-2433.jpg"
+                    alt="restaurante Marielita"></li>
+            <li><img class="restaurante"
+                    src="https://img.freepik.com/fotos-premium/barista-bonito-fazer-uma-xicara-de-cafe_13339-284411.jpg"
+                    alt="restaurante Marielita"></li>
+        </ul>
+    </div>
+    <!--Contenedor para el formulario-->
+    <div class="container">
+        <div class="content">
+            <div class="image-box"><!--contenedor de la imagen del formulario-->
+                <img src="logo.png" alt="">
+            </div>
+
+            <form action="https://formspree.io/f/xovnpdal" method="POST"><!-- Aqui en el action, colocamos el link que nos lleva a la base de datos de FORMSPREE-->
+                <!--la accion esta mi correo por lo mismo que explique abajo-->
+                <div class="topic">Contáctanos</div>
+                <div class="input-box">
+                    <input type="text" name="from_name" required><!--campos del furmulario-->
+                    <label>Ingrese su nombre</label><!--colocar nombre del cliente-->
+                </div>
+                <div class="input-box">
+                    <input type="text" name="from_email" required><!--campos del furmulario-->
+                    <label>Ingrese su email</label><!--colocar el email del cliente -->
+                </div>
+                <div class="message-box">
+                    <textarea name="message" required></textarea><!--campos del furmulario-->
+                    <label>Comentario</label><!--para colocar los datos del evento o algun mensaje o sugerencia -->
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Enviar"><!--boton para enviar-->
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo en el footer -->
+            <div class="footer-logo">
+                <img src="footer2.png" alt="Logo Marielita">
+            </div>
+            <!-- Información del pie de página -->
+            <div class="footer-info">
+                <p>Marielita © 2025</p>
+                <p>by Nicolle Sagastume C5A</p>
+                <!-- Iconos de redes sociales y contacto -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i
+                        class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/1234567890" target="_blank" class="icon whatsapp"></a><i
+                        class="fab fa-facebook-f"></i>
+                    <a href="https://goo.gl/maps/tuUbicacion" target="_blank" class="icon ubicacion"
+                        aria-label="Ubicación"></a><i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i><!-- Ícono de teléfono (no funciona) -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
