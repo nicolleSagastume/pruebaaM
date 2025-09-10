@@ -1,0 +1,511 @@
+/* Estilos generales para todos los elementos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos base del cuerpo del documento */
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0;
+    justify-content:center;
+    align-items: center;  
+
+}
+/* Estilo del encabezado */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+/* Contenedor del logo */
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+}
+/* contenedor de los nav*/
+.container-nav{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+/* contenedor de los nav color amarillo*/
+.nav-amarillo {
+    background-color:  #F4BC4A;
+    color:black;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+/* contenedor de los nav color cafe*/
+.nav-cafe{
+    background-color:  #683C11;
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+/* Efecto hover para los botones nav-amarillo */
+.navbar-amarillo a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+}
+/* Efecto hover para los botones nav-cafe */
+.navbar-cafe a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+}
+/* Contenedor del slider de imágenes*/
+.slider-box {
+    width: 95% !important;
+    height: auto;
+    margin: 0px auto 0;
+    overflow: hidden;
+}
+/* Lista de imágenes en fila para el slider */
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+/* Cada imagen del slider */
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+/* Ajuste de las imágenes al 100% del ancho del contenedor */
+.slider-box img {
+    width: 100%;
+}
+
+.titleC {
+    text-decoration: none;
+    color:#fedc97;
+}
+/* Animación del slider */
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+/*esto icnluye el padding de las tarjetas*/
+.todo{
+    padding: 25px 235px;
+}
+
+/* Estilos para la clase restaurante (contenedor de imágenes) */
+.restaurante{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+}
+/* Estilos para las imágenes dentro del contenedor restaurante */
+.restaurante img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* recorta y ajusta sin deformar */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+}
+/* Efecto al pasar el mouse sobre las imágenes del restaurante */
+.restaurante img:hover {
+      transform: scale(1.05); /* pequeño efecto al pasar el mouse */
+}
+/* para subtitulo adomicilio*/
+h3 {
+      text-align: left;
+      margin-top: 30px;
+      margin-left: 100px;
+      font-family: 'Poppins';
+}
+/*para el contenedor de tarjetas*/
+.container-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* estilo para las tarjetas*/
+.card{
+    display: flex;
+    position: relative;
+    width:250px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+/* esto es para la variable, la iamgen*/
+.card .card_landing{
+    position:relative;
+    width:100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background:linear-gradient(transparent 80%, #000), var(--i);/* esto dice que tenga un degradado de color negro, en donde se pone el nombre del plato*/
+    background-position:center;
+    background-size: cover;
+    z-index:100;/*esto determina que el objeto quede arriba*/
+}
+/*para el nombre de los platillos*/
+.card .card_landing h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Stegera';
+}
+/*esto es para el estilo donde va la info del platillo*/
+.card .card_info {
+    position:absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0; 
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+/* mueve la tarjet a la izquierda y deja espacio a la derecha */
+.card:hover{
+    margin-right: 225px;
+}
+/*mueve la info a la derecha*/
+.card:hover .card_info {
+    left: 100%;
+}
+/*para el titulo dentro de la tarjeta*/
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #F4BC4A;
+}
+/*para el titulo dentro de la tarjeta*/
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color:#F4BC4A;
+}
+/*descripcion de lo q es la tarjeta*/
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styles for screens 768px wide or smaller */
+@media (max-width: 768px) {
+  .todo{
+    padding: 10px;
+  }
+
+    .card .card_info {
+    left: 100%;
+    }
+
+    .card:hover{
+    margin-right: initial !important;
+    }
+}
+/* para lo iconos*/
+.card_info .head .description .item { 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+/* para el head de la descripcion*/
+.card_info .head .description i {  
+   color:#F4BC4A;
+   font-size: 15px;
+
+}
+/* el texto que esta a la par de los iconos*/
+.card_info .head .description .item  p  { 
+   font-size: 13px;
+}
+/*esto es para lo ingredientes*/
+.card_info .content {
+    margin-top: 15px;
+
+}
+/* la lista de ingredientes*/
+.card_info .content .list { 
+   padding: 10px 15px;
+
+
+}
+/*esto es para los ingredientes*/
+.card_info .content .list  li   { 
+  font-size: 12px;
+  margin-bottom: 5px;
+
+}
+/*para el boton*/
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #F4BC4A;
+    display: block;
+    margin-top: 10px;
+
+}
+.todo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.tarjeta {
+    height: 420px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 0px 14px 32px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.tarjeta .img {
+    width: 50%;
+}
+.tarjeta .img img{
+    width: 100%;
+    vertical-align: top;
+    margin-top: 30%;
+}
+.tarjeta .img iframe{
+    width: 100%;
+    vertical-align: top;
+    
+}
+.producto-info {
+    width: 50%;
+    border-radius: 0 7px 10px 7px;
+    background:#c5a667 ;
+}
+.producto-texto {
+    width: 100%;
+}
+.producto-texto h1 {
+    margin-left: 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    color:#3d2415;
+}
+.producto-texto h1, .enlace{
+    font-family:'Stagera';
+}
+.producto-texto h2{
+    margin: 0 0 47px 38px;
+    font-size:  13px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color:  #8A6835;
+    line-height: .2em;
+    margin: 0 75px 15px 75px;
+}
+
+.producto-texto p {
+    height: 125px;
+    margin-left: 38px;
+    font-family: 'Poppins';
+    color: #3d2415;
+    line-height: 1.7em;
+}
+.enlace {
+    height: 103px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+.enlace a{
+    height: 50px;
+    width: 176px;
+    border-radius: 60px;
+    font-family: 'Stagera';
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    background: #3d2415;
+    cursor: pointer;
+    text-decoration: none;
+    
+
+}
+
+/*footer*/
+
+ footer {
+      background-color: #3d2415;
+      padding: 20px 40px;
+      color: white;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+/* Logo de Marielita */
+    .footer-logo img {
+      height: 80px;
+    }
+/* Información de texto del footer */
+    .footer-info {
+      text-align: right;
+    }
+/* Márgenes de los textos en el footer */
+    .footer-info p {
+      margin: 4px 0;
+    }
+/* Contenedor de íconos sociales */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+/* Estilo y animación de íconos sociales */
+    .social-icons i {
+      margin-left: 12px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.2);
+      color: #f3cba5;
+    }
+
+/* Ajustes para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-info {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .social-icons i {
+        margin: 0 8px;
+      }
+    }
+
+
+/* --- Responsive para móviles --- */
+@media (max-width: 768px) {
+  /* Encabezado en columna */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  /* Logo más pequeño */
+  .logo img {
+    height: 100px;
+  }
+
+  /* Ocultar navegación en móviles */
+  .container-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #432918;
+  }
+
+  .container-nav a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  /* Menú hamburguesa */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #432918;
+    background: none;
+    border: none;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  /* Mostrar el menú cuando esté activo */
+  .container-nav.active {
+    display: flex;
+  }
+
+  /* Ajustes de la sección */
+  .section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .block img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 1.6rem;
+  }
+
+  /* Footer centrado */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
